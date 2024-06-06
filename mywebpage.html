@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <!--<script src="https://kit.fontawesome.com/eff8827105.js" crossorigin="anonymous"></script>-->
+    <link rel="stylesheet" href="mywebpage.css">
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Work+Sans:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="script.js"></script>
+    <title>My Personal page</title>
+</head>
+<body>
+      
+    <nav>
+        <ul id="navbar">
+            <li href="#home">Home</li>
+            <li href="#services">About</li>
+            <li href="#awards">Skills</li>
+            <li href="#contacts">Contact</li>
+        </ul>    
+    </nav>
+<!--Header-->
+        <div id="headerleft"><a>Tele Buren</a></div>
+        <div id="headerright">
+            <img src = "images/whitemoon.png" id="icon">
+        </div>
+        <!--<div id="headerright" style="color: white; font-size: 25px; cursor: pointer;
+        transition: .3s;"><i class="fa-solid fa-magnifying-glass"></i></div>-->
+    <!--Content-->
+    <main>
+        <section id="left">
+            <img src="https://lh3.googleusercontent.com/pw/AP1GczNnj1M_E4qZzc7oXV9O9yNKFPRUCoG60TiaB1AyPY9NDXrZshuQqnmQ1c56yEZhnu31T_MYy4gtpFiFEBMQAfFS7znlCXCp9Jomd9owhfoXCIXWTw=w2400" alt="profile" height="400vw" width="400vw">
+        </section>
+
+        <section id="right">
+            <h1 style="font-weight: bold;font-size: 60px;">Hi, I'm Tele</h1>
+            <h2>A big dreamer</h2>
+            <h2>Dream to build</h2>
+            <p style="margin-top: 60px;">Subscribe for a monthly digest</p>
+            <!---This is the subscription form-->
+            <div class="box">
+                <form action="#">
+                    <div class="form-box">
+                        <input type="text" name="EmailAddress" placeholder="Enter your email">
+                        <button tyep="submit">Subscribe</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+    <!--About section-->
+    <article class="About">
+        <div class="aboutcontent">
+            <div>
+                <h1>About</h1>
+                <p style="text-align: justify;">Buren is my family name and I hailed from the islands of Kiribati. Where is that? Is the response I usually get. We are scattered in the middle of the Pacific Ocean. Fun Fact: We may be one of the tiniest nations but we the only country to be situated in the four hemispheres!<br/> New Zealand has been my home for 10 years now. I have a mixed experience in terms of work, ranging from health, horticulture, construction and the usual fun labour here and there to make meets end.<br/>I've been fascinated by technology but never really got a chance to dive in and completely take advantage of studying it while available in NZ.<br/>Mission Ready has reignited that interest in me and it gives me hope and inspiration to stay curious and be involved in the ever changing technology and its effects on our everyday life<br/></p>
+            </div>
+            <div id="mapdiv">
+                <img class="rotate" src="https://lh3.googleusercontent.com/pw/AP1GczPLKuYuiFAMpuR9MazftxzF7OJmhC24Chk53Pn5LASlMbiky-jH7oPaASlRvN61QNMl-mXCWWZ_6hlxrbXjP6CEe1hlv33CTbQnbOrKAGWSI4YZ8Q=w2400" alt="kiribati" id="map">
+            </div>
+        </div>
+    </article>
+    <!--Skills section-->
+    <article class="skills">
+        <div id="outercircle">
+            <div class="animation">
+            <!--This is animation div--> <img src="images/mr2.png" alt="" id="slider">
+            </div>    
+    
+        </div>
+            <!--This is list of skills hover buttons-->
+            <div class="skillscontent">
+                <h1 id="center">Skills</h1>
+                <p style="text-align: center">These are some of the skills that I will be learning in the program: </p>
+                <ul class="skilllist">
+                    <li class="button" onmouseenter="changeImg ('images/html.logo.png')" id="skill1">HTML</li>
+                    <li class="button" onmouseenter="changeImg ('images/cssicon.png')" id="skill2" >CSS</li>
+                    <li class="button" onmouseenter="changeImg ('images/github.png')" id="skill3">Git</li> 
+                    <li class="button" onmouseenter="changeImg ('images/javascript.png')" id="skill4">JavaScript</li>      
+                    <li class="button" onmouseenter="changeImg ('images/reacticon.png')" id="skill5">React</li>       
+                    <li class="button" onmouseenter="changeImg ('images/apilogo.png')" id="skill6">API</li>        
+                    <li class="button" onmouseenter="changeImg ('images/nodelogo.png')" id="skill7">Node.js</li>        
+                    <li class="button" onmouseenter="changeImg ('images/exlogo.png')" id="skill8">Express.js</li>         
+                    <li class="button" onmouseenter="changeImg ('images/databaselogo.png')" id="skill9">Databases</li> 
+                </ul>
+            </div>
+            
+    </article>
+    <article class="review" >
+            <div id="panel" class="panel-container">
+                <h2>How satisfied are you with my project?</h2>
+                <div class="ratings-container">
+                    <div class="rating active">
+                        <img class="emoji" src="images/emoji.png">
+                        <small>Satisfied</small>
+                    </div>
+                    <div class="rating">
+                        <img class="emoji" src="images/emoji (1).png">
+                        <small>Ok</small>
+                    </div>
+                    <div class="rating">
+                        <img class="emoji"  src="images/emoji (2).png">
+                        <small>Disappointed</small>
+                    </div>
+                </div>
+                <button class="btn" id="send">Send review</button>
+            </div>
+    </article>
+        <!--Footer-->   
+    <footer id="example" >
+        <h3 style="color: white;">Coyright 2024 by Tele Buren. All rights reserved</h3>
+    </footer>
+       
+</body>
+</html>
